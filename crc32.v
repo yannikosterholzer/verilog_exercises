@@ -42,7 +42,7 @@ module crc32  #( parameter INIT_CRC = 32'hFFFF_FFFF)
         reg  [7:0]  index;                          //Table-Index
 
         
-        assign crc_out = crc_reg ^ XORVAL;          // Final-Xor
+        assign crc_out = crc_reg ^ XOR_OUT;          // Final-Xor
 
             
         always @(posedge clk) begin
