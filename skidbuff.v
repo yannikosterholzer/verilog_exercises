@@ -63,6 +63,4 @@ module skidbuff #(parameter DWIDTH = 8)(
             upstream_ready    <= downstream_ready; 
 
 endmodule
-            upstream_ready <= downstream_ready || !valid_buffer;
 
-endmodule
